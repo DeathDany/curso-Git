@@ -47,3 +47,22 @@ git pull
 
 //comando de ayuda en git
 git help
+
+
+//para eliminar archivos no trackeados en git (que no se encuentren en el stage u no hayan sido commiteados solamente)
+git clean -f 
+
+//para descartar cambios realizados dentro de un archivo que se encuentre en el stage u haya sido commiteados
+git checkout <nombreArchivo>
+
+//para regresar archivos o cambios realizados en el stage(ya se encuentran agregados por el comando add)
+git reset HEAD <nombreArchivo>
+
+//revertir commits(el hash del commit se obtiene con git log) 
+git revert <hash>
+
+//renombrar archivos
+git mv <nombre_anterior> <nombre_nuevo>
+
+//eliminar archivos
+git rm <nombre_archivo>
