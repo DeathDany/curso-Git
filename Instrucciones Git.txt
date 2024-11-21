@@ -1,3 +1,5 @@
+//------------------------------------------------  COMANDOS BASICOS PARA EL MANEJO DE GIT ----------------------------------------\\
+
 //Inicializar repositorio
 
 git init
@@ -40,3 +42,8 @@ git status
 //comando para ver los logs
 git log
 
+//comando para traer cambios realizados por alguien mas
+git pull
+
+//comando de ayuda en git
+git help
