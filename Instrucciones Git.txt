@@ -1,0 +1,42 @@
+//Inicializar repositorio
+
+git init
+
+
+//configurar usuario e email para saber quien maneja o hace cambios en el repo(local)
+
+git config --global user.name "introduce aqui tu nombre"
+git config --global user.email "introduce aqui tu email"
+
+
+//una ves que ya inicializaste el repo y agregaste algunas configuraciones, puedes agregar documentos con este comando
+
+git add . (con el punto el igual a usar  --all ya que agrega todo lo que se encuentre en el stage)
+
+//para hacer commit(un commit es "una screenshot u snapshot" del repo, es decir, guarda lo que hayas agregado y sabe que es lo que agregaste)
+
+git commit -m "agrega un comentario"
+
+//para una rama remota, debes crearla desde github y el mismo te dara instrucciones inicializar tu repo o si ya tienes uno existente
+// lo puedas agregar en el ya existente.
+
+//inicializar repo con rama remota
+
+git init
+git add README.md (opcional)
+git commit -m "agrega un comentario"
+git remote add <"agrega tu url, sin comillas (se obtiene de github)">
+git branch -M main
+git push -U origin main
+
+//en caso de tener una rama ya inicializada y no querer crearla de nuevo
+git remote add <"agrega tu url sin comillas (se obtiene de github)">
+git branch -M main
+git push -U origin main
+
+//comandos para ver estatus del repo
+git status
+
+//comando para ver los logs
+git log
+
